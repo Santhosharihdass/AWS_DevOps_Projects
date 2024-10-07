@@ -1,26 +1,50 @@
-Day 1:
-🚀 Excited to Share My Latest Project! 🚀
-I've successfully hosted a website using an AWS EC2 instance! You can check it out here: http://13.201.226.66/. This project involved setting up and securing the server, configuring DNS, and optimizing the site for performance.
-Also, here's my personal website showcasing some of my other work: https://lnkd.in/gcrTJhAX.
-This experience helped me sharpen my skills in cloud infrastructure and web hosting. Looking forward to taking on more cloud projects!
-hashtag#AWS hashtag#EC2 hashtag#WebDevelopment hashtag#CloudComputing hashtag#DevOps
+🚀 Website Hosting on AWS EC2: Day 1
+In this project, I successfully hosted a website using an AWS EC2 instance. The project covers essential steps such as setting up the EC2 instance, installing a web server, and configuring security for optimal performance.
 
-#Commands
+Key Steps
+1. Connect to the EC2 Instance via SSH
+To connect to the EC2 instance, use SSH with the private key (filename.pem) that you downloaded during the instance setup.
 
-connect ssh to aws ec2-ip
-#ssh -i filename.pem user-name@ip-address
+bash
+Copy code
+ssh -i filename.pem ec2-user@<ip-address>
+2. Switch to Superuser
+After connecting, elevate to superuser to have administrative control over the server.
 
-change to super user
-#sudo su
+bash
+Copy code
+sudo su
+3. Update the System Packages
+Always ensure the system is up-to-date by running the following command:
 
-update the file
-#yum get update
+bash
+Copy code
+yum update -y
+4. Install Apache (HTTPD) Web Server
+Apache is a widely used web server, and installing it is a straightforward process on Amazon Linux using yum.
 
-install apace(httpd) server
-#yum install httpd
+bash
+Copy code
+yum install httpd -y
+5. Start the Apache Service
+Once installed, start the Apache service to serve the website.
 
-start the service
-#service httpd start
+bash
+Copy code
+service httpd start
+6. Test Website Access
+After starting Apache, the website will be accessible through the EC2 instance's public IP address.
 
+You can check out the website at: http://13.201.226.66/.
 
-
+Outcome
+Set up an AWS EC2 instance to host a website.
+Installed and configured an Apache web server.
+Gained hands-on experience with cloud infrastructure and web hosting on AWS.
+Next Steps
+Further optimize the website for performance.
+Configure DNS for domain name mapping.
+Implement security enhancements such as SSL/TLS encryption.
+Links
+My hosted website: http://13.201.226.66/
+Personal website: https://lnkd.in/gcrTJhAX
