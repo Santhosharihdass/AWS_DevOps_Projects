@@ -1,3 +1,12 @@
+Day 1:
+🚀 Excited to Share My Latest Project! 🚀
+I've successfully hosted a website using an AWS EC2 instance! You can check it out here: http://13.201.226.66/. This project involved setting up and securing the server, configuring DNS, and optimizing the site for performance.
+Also, here's my personal website showcasing some of my other work: https://lnkd.in/gcrTJhAX.
+This experience helped me sharpen my skills in cloud infrastructure and web hosting. Looking forward to taking on more cloud projects!
+hashtag#AWS hashtag#EC2 hashtag#WebDevelopment hashtag#CloudComputing hashtag#DevOps
+
+#Commands
+
 connect ssh to aws ec2-ip
 #ssh -i filename.pem user-name@ip-address
 
