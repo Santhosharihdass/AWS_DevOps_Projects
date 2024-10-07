@@ -1,1 +1,17 @@
+connect ssh to aws ec2-ip
+#ssh -i filename.pem user-name@ip-address
+
+change to super user
+#sudo su
+
+update the file
+#yum get update
+
+install apace(httpd) server
+#yum install httpd
+
+start the service
+#service httpd start
+
+
 
