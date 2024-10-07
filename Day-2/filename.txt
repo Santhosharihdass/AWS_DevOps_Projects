@@ -1,1 +1,55 @@
+🚀 Windows OS Deployment and IIS Website Hosting on AWS EC2
+This project demonstrates the deployment of a Windows Server instance on AWS EC2, installation of IIS (Internet Information Services), and hosting a custom website. It involves setting up security, managing the instance, and ensuring web hosting capabilities.
 
+Project Overview
+Key Objectives:
+Deploy Windows OS on AWS EC2 using RDP.
+Install and configure IIS to host a website.
+Host a custom website on the IIS server.
+Configure Elastic IP for persistent access to the instance.
+Follow best security practices using key pairs and security groups.
+Prerequisites
+AWS account with access to EC2 services.
+RDP client to connect to the Windows instance.
+Custom website files to be hosted on IIS.
+Project Steps
+1. Launch a Windows EC2 Instance
+Open the AWS Management Console and navigate to EC2.
+Click Launch Instance and select Windows Server 2019 or any preferred version.
+Choose an appropriate instance type (t2.micro for free tier).
+Configure the security group to allow RDP (port 3389) and HTTP (port 80) access.
+Create a key pair and download it for secure access.
+2. Connect to the Instance via RDP
+Once the instance is running, download the RDP connection file from the EC2 console.
+Use the key pair to decrypt the administrator password.
+Open an RDP client and connect to the instance using the public IP, username, and password.
+3. Install IIS on Windows Server
+After connecting to the server, open Server Manager.
+Select Add Roles and Features and choose IIS (Internet Information Services).
+Complete the installation process and ensure IIS is running.
+4. Host a Custom Website
+Replace the default IIS webpage with your custom website.
+Upload your website files to C:\inetpub\wwwroot (the default directory for IIS).
+Restart IIS using IIS Manager to reflect the changes.
+5. Assign an Elastic IP
+Go to the EC2 dashboard and allocate a new Elastic IP under the Network & Security section.
+Associate the Elastic IP with your running instance for persistent access, even if the instance is stopped and restarted.
+6. Best Practices for Security
+Manage security groups to restrict access (e.g., limit RDP to specific IP addresses).
+Use key pairs to secure access to the instance instead of using passwords.
+7. Monitor and Manage EC2 Instance
+Start, stop, or reboot the instance from the AWS console as needed.
+Monitor instance performance using CloudWatch.
+Outcome
+Successfully deployed a Windows Server on AWS.
+Installed and configured IIS to host a website.
+Achieved persistent access using an Elastic IP.
+Followed AWS security best practices by using key pairs and managing security groups.
+Gained hands-on experience with Windows Server administration, AWS EC2, and web hosting.
+Technologies Used
+AWS EC2 for instance deployment.
+Windows Server for web hosting.
+IIS for website deployment.
+Elastic IP for persistent server access.
+Future Improvements
+Automating the deployment process using AWS CloudFormation or Terraform
