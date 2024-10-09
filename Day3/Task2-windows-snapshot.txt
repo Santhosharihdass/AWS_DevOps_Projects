@@ -1,0 +1,27 @@
+AWS EC2 Snapshot Management and Scaling
+This project demonstrates how to launch, manage, scale, and back up a Windows EC2 instance on AWS using EBS volumes and snapshots.
+
+Overview of Steps:
+Launch EC2 Instance:
+Deployed a Windows EC2 instance with specific network configurations, where the default IP was disabled and a static public IP was assigned to improve security and predictability.
+
+Attach and Use Storage:
+Attached an 8GB EBS volume to the instance and populated it with sample data to test data manipulation and storage capabilities.
+
+Scale EBS Volume:
+As the need for storage grew, scaled the EBS volume from 8GB to 10GB to meet new requirements, highlighting the flexible and scalable nature of AWS storage.
+
+Create Snapshot for Backup:
+Created a snapshot of the instance to ensure the current state is saved for future recovery or migration. This snapshot ensures data safety in case of system failure.
+
+Terminate Instance:
+After saving the snapshot, terminated the original EC2 instance to simulate an end-of-life scenario and to verify backup recovery steps.
+
+Restore Snapshot:
+Launched a new EC2 instance and successfully attached the snapshot as a volume, restoring all data and confirming the consistency and reliability of the backup.
+
+Key Takeaways:
+This scenario demonstrates how to manage cloud resources, scale storage dynamically, create backups via snapshots, and restore them to new instances.
+It reinforces critical skills in AWS EC2 instance management, EBS storage operations, and disaster recovery.
+Project Files:
+This repository includes scripts to automate the instance creation, storage scaling, and snapshot creation processes.
