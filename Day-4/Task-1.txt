@@ -1,1 +1,25 @@
+🚀 Day-4: Launched a Linux OS EC2 Instance with Volume Management & Explored Amazon EBS! 🖥️💻
+
+Today was a productive day working with AWS cloud infrastructure, focusing on EC2 and EBS storage management. Here's a breakdown of what I achieved:
+
+Task 1: Linux OS EC2 Instance with Volume Management
+1️⃣ Launched a Linux OS EC2 instance on AWS and created a new EBS volume.
+2️⃣ Attached the volume to the instance, verifying its visibility using df -h and lsblk.
+3️⃣ Formatted the volume using the mkfs command.
+4️⃣ Mounted the volume by creating a directory with mkdir and attaching it via mount.
+5️⃣ Optimized the storage by resizing the volume with resize2fs.
+
+It was a great hands-on learning experience with AWS EC2 and essential Linux commands like df -h, lsblk, mkfs, mkdir, mount, and resize2fs.
+
+Task 2: Exploring Amazon EBS: Your Go-To Block Storage for EC2 Instances 🌐
+🔹 Persistent & Reliable: EBS retains data even when EC2 instances are stopped or terminated, ensuring durability.
+🔹 Flexible Storage Options: From General Purpose SSDs to Provisioned IOPS SSDs, EBS meets diverse storage needs.
+🔹 Effortless Scaling: Resize volumes without downtime.
+🔹 Snapshots for Backup: Secure your data with snapshots for disaster recovery.
+🔹 Security Built-In: EBS volumes are encrypted at rest with AWS KMS, safeguarding data.
+
+Amazon EBS is a game-changer for building secure, scalable, and resilient cloud solutions in AWS.
+
+#AWS #Linux #DevOps #CloudComputing #EC2 #EBS #CloudStorage #StorageManagement #TechInnovation
+
 
