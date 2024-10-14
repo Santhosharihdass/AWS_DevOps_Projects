@@ -1,0 +1,42 @@
+AWS VPC Project - 2-Tier Network Architecture
+Project Overview
+This project involves the design and deployment of a 2-tier network architecture using AWS Virtual Private Cloud (VPC). The architecture is focused on providing secure communication between internet-facing resources and internal backend services, while ensuring network isolation and scalability.
+
+Key Components:
+VPC: Created a custom VPC with a 10.0.0.0/16 CIDR block.
+Subnets:
+Public Subnet (Tier 1): For hosting internet-facing resources with direct access to the internet.
+Private Subnet (Tier 2): For internal backend services, isolated from external access.
+Internet Gateway: Attached to the VPC to provide internet access to resources in the public subnet.
+Route Tables:
+Public Route Table: Connected to the Internet Gateway for internet-bound traffic in the public subnet.
+Private Route Table: Linked to a NAT Gateway for secure outbound traffic from the private subnet.
+NAT Gateway: Deployed in the public subnet to enable outbound internet access for resources in the private subnet without exposing them to external traffic.
+Security Groups:
+Public Security Group: Allows inbound SSH (22), RDP (3389), HTTP (80), and HTTPS (443) traffic for the frontend instances.
+Private Security Group: Secures internal backend services with restricted access.
+EC2 Instances:
+Instance 1 (Public Subnet): Windows instance with a public IP for external RDP access.
+Instance 2 (Private Subnet): Windows instance without a public IP, only accessible internally with outbound traffic via the NAT Gateway.
+Validation:
+Instance 1: Verified internet access and remote desktop connectivity (RDP) through the public IP.
+Instance 2: Confirmed secure outbound access through the NAT Gateway, with no direct external exposure.
+Technologies Used:
+AWS VPC
+Subnets (Public and Private)
+Internet Gateway
+NAT Gateway
+Route Tables
+Security Groups
+AWS EC2 Instances (Windows)
+Instructions:
+To replicate this project, follow these steps:
+
+Create a VPC with a 10.0.0.0/16 CIDR block.
+Set up public and private subnets within the VPC.
+Attach an Internet Gateway and configure the public route table.
+Deploy a NAT Gateway and link it to the private route table.
+Launch two Windows EC2 instances: one with a public IP in the public subnet, and one without a public IP in the private subnet.
+Configure the necessary security groups and validate connectivity.
+Conclusion:
+This project demonstrates the design and deployment of a secure and scalable 2-tier network architecture on AWS, utilizing core AWS services like VPC, subnets, route tables, NAT Gateway, and security groups.
