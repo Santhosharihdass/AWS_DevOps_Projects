@@ -1,0 +1,40 @@
+AWS VPC Peering Between Mumbai and Virginia Regions
+This project demonstrates the configuration of VPC Peering between two AWS regions: Mumbai (ap-south-1) and Virginia (us-east-1). VPC Peering allows private connectivity between VPCs across regions, enabling secure and scalable multi-region network architectures.
+
+Project Overview:
+VPC Creation:
+
+Created two VPCs in different AWS regions (Mumbai and Virginia) with distinct CIDR blocks to ensure no overlap in IP address space.
+Subnet & Route Table Configuration:
+
+Defined public and private subnets within each VPC.
+Associated each subnet with appropriate route tables for network traffic segmentation.
+Internet Gateway Setup:
+
+Attached Internet Gateways to both VPCs to enable internet access for instances in the public subnets.
+VPC Peering:
+
+Established a VPC Peering connection by sending a request from the Mumbai VPC and accepting it in the Virginia VPC.
+This allowed direct communication over private IPs between instances in both regions.
+Route Table Updates:
+
+Updated route tables in both VPCs to allow traffic to flow between the peered VPCs by adding routes pointing to the peer's CIDR blocks.
+Security Group Configuration:
+
+Configured security groups to allow inbound and outbound traffic between instances across the VPC Peering connection.
+Connection Testing:
+
+Launched EC2 instances in both VPCs and tested private IP communication between them to verify the successful peering setup.
+Key Features:
+Multi-Region Networking: Enables cross-region communication using VPC Peering.
+Private Network Architecture: Maintains secure traffic flow over private IPs without the need for VPNs or public Internet access.
+Scalability: Demonstrates how to scale and expand your AWS infrastructure by connecting VPCs across regions.
+AWS Services Used:
+VPC (Virtual Private Cloud)
+EC2 (Elastic Compute Cloud)
+Internet Gateway
+Route Tables
+Security Groups
+Future Improvements:
+Implement multi-region failover and redundancy using services like Route 53.
+Integrate more advanced security controls such as Network ACLs.
