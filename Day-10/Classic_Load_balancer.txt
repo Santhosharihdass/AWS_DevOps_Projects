@@ -1,0 +1,42 @@
+🚀 AWS Project: Classic Load Balancer & Auto Scaling Implementation 🌐
+Project Overview
+This project focuses on deploying and managing a highly available infrastructure using AWS Classic Load Balancer and Auto Scaling. The goal was to ensure that the application remains fault-tolerant and scales automatically with traffic.
+
+Key Steps Involved:
+1. Launched Two EC2 Instances:
+Created two EC2 instances.
+Installed the Apache web server using shell commands to handle incoming web traffic.
+2. Created a Classic Load Balancer:
+Configured a Classic Load Balancer (CLB) to evenly distribute traffic across both EC2 instances.
+This ensures availability and fault tolerance by routing traffic only to healthy instances.
+3. Auto Scaling Setup:
+Created an AMI from the configured instances to use for scaling.
+Set up an Auto Scaling Group and defined scaling policies to handle traffic surges.
+Monitored as Auto Scaling automatically launched two additional instances to balance traffic loads.
+4. Auto Scaling Testing:
+Simulated failure by manually terminating two instances.
+Auto Scaling immediately responded by launching two new instances to replace the terminated ones, ensuring continuous service availability.
+Why Use Load Balancers?
+Load balancers are critical for distributing incoming traffic across multiple servers, preventing any single instance from being overwhelmed. This helps maintain high availability, scalability, and reliability for your application.
+
+Types of AWS Load Balancers:
+Classic Load Balancer (CLB): Basic load balancing across EC2 instances, supports HTTP/HTTPS and TCP.
+Application Load Balancer (ALB): Works at the application layer (Layer 7), allowing for advanced routing based on URL paths, headers, etc.
+Network Load Balancer (NLB): Optimized for performance at the network layer (Layer 4), ideal for low-latency, high-throughput scenarios.
+Use Cases for Load Balancers:
+Web Applications: Ensure seamless traffic distribution and high availability.
+Microservices: Route requests based on specific rules or conditions.
+Distributed Systems: Maintain service reliability by balancing workloads across different components of the system.
+Conclusion:
+This project deepened my understanding of:
+
+Load balancing and its importance in cloud architectures.
+Auto-scaling strategies to manage traffic and ensure availability.
+Cloud infrastructure management and fault-tolerant systems using AWS services.
+Technologies Used:
+Amazon EC2
+AWS Classic Load Balancer
+Auto Scaling
+Apache Web Server
+Tags:
+AWS Load Balancing Auto Scaling EC2 Cloud Infrastructure Fault Tolerance
