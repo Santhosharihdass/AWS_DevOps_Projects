@@ -1,0 +1,24 @@
+AWS Network Load Balancer Project
+This project demonstrates the configuration of an AWS Network Load Balancer (NLB) with both Linux and Windows instances as backends, optimized for cross-platform load balancing and efficient, low-latency traffic distribution.
+
+Project Steps
+Instance Launch & Configuration
+
+Linux Instance 🐧: Deployed a web service on port 81 via a Bash script.
+Windows Instance 🪟: Enabled RDP server access on port 8080 for secure connectivity.
+Target Group Setup
+
+Configured distinct target groups for Linux and Windows instances, directing traffic based on ports to ensure precise service delivery.
+Network Load Balancer Configuration
+
+Configured the NLB to route traffic across target groups, allowing access to each instance using the NLB DNS endpoint (Linux: /81, Windows: /8080).
+Why Network Load Balancer?
+High Performance ⚡: Operating at Layer 4, the NLB provides efficient, low-latency traffic handling.
+Scalability & Reliability 🔄: Automatically scales with demand, ensuring high availability.
+Static IP Support 📍: Facilitates IP-based access control, enhancing security and consistency.
+Cross-Platform Support 🖥️: Manages services across Linux and Windows environments within one infrastructure.
+Enhanced Security 🔒: Provides network-layer protection for sensitive workloads.
+Health Checks ✅: Regular health checks maintain continuous service by rerouting traffic as needed.
+Outcome
+This configuration enables seamless, high-performance access across Linux and Windows instances, improving availability and flexibility. This project strengthened my skills in AWS load balancing and cross-platform network setup.
+
