@@ -1,0 +1,25 @@
+🚀 AWS EFS Project
+Overview
+This project demonstrates the setup of an Amazon Elastic File System (EFS) for scalable and secure shared storage between two Amazon EC2 instances running on Amazon Linux OS. The project highlights the configuration of security, deployment of instances, and the use of EFS for centralized file sharing.
+
+Project Steps 📋
+Configured Security Group 🔒: Set up a Security Group allowing SSH and NFS traffic to ensure secure communication between instances.
+Launched EC2 Instances 🖥️: Deployed two Amazon Linux EC2 instances for the environment setup.
+Connected Instances 📡: Accessed both instances via SSH to perform configurations.
+Created & Mounted EFS 📁: Established an EFS file system, connected, and mounted it to both instances, allowing them to share files seamlessly.
+Verified Setup ✅: Used the df -h command to verify that both instances were successfully connected to the shared EFS storage.
+Why Use EFS? 🤔
+Amazon EFS is a fully managed, scalable file storage solution that allows multiple EC2 instances to simultaneously access the same data. This setup is especially useful for web applications, content management, data analytics, and more.
+
+Advantages of EFS 🌟
+Scalability 📈: Automatically adjusts capacity as files are added or removed—no need for manual management.
+High Availability 🔄: Data is stored across multiple availability zones, ensuring data durability and accessibility.
+Secure Access 🔒: Integrated with AWS Identity and Access Management (IAM) for secure control over access permissions.
+Cost-Efficient 💼: Only pay for the storage used—no need to over-provision resources.
+Technologies Used 🛠️
+AWS EC2
+Amazon Linux OS
+AWS EFS
+NFS Protocol
+SSH
+Feel free to explore the project and see the setup files for each step!
