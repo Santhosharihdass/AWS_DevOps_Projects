@@ -1,0 +1,26 @@
+Day 16: AWS Continuous Delivery Pipeline - Step-by-Step Deployment Guide 🚀
+This project expands on AWS CI/CD concepts, focusing on building a Continuous Delivery (CD) pipeline to automate application deployment with AWS services. Below is a breakdown of each step.
+
+Steps:
+Pipeline Setup and Initial Code Update 📜
+
+Edited the index file to create an updated version.
+Saved and pushed the modified file to Amazon S3 using AWS CLI commands, simulating an automatic integration step.
+Verification of Updates 🌐
+
+Confirmed the code update by checking the file on S3 and previewing the result in a browser, ensuring the pipeline accurately reflects changes.
+Configuring SNS Notifications 📩
+
+Subscribed to AWS SNS (Simple Notification Service) to receive real-time email alerts, providing quick insight into deployment statuses and events.
+Why AWS Continuous Delivery? 🚀
+Scalability: Handles growing demands as applications evolve.
+Reliability: Ensures high availability and consistent deployments.
+Real-Time Monitoring: SNS notifications make tracking and troubleshooting faster and more efficient.
+Advantages of AWS CI/CD 🔑
+Automation: Reduces manual tasks, increasing deployment speed and reliability.
+Consistency: Uniform updates across environments minimize the chance of errors.
+Cost-Efficiency: AWS’s pay-as-you-go model keeps costs low for high-quality performance.
+By working hands-on with AWS CodePipeline, S3, CLI, and SNS, this project builds a foundation in automated deployment solutions, making it easier to handle complex CI/CD workflows. 🌟💪
+
+Tags:
+AWS DevOps CI/CD ContinuousDelivery AWSCodePipeline S3 SNSNotifications AWSCLI Automation CloudComputing
