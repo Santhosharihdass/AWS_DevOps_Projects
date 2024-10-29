@@ -1,0 +1,27 @@
+AWS CI/CD Pipeline Deployment 🌐🚀
+In this project, I built a Continuous Integration and Continuous Deployment (CI/CD) pipeline using AWS services to automate the application deployment process. The objective was to enhance deployment efficiency, minimize manual intervention, and create a scalable infrastructure.
+
+Key Highlights:
+Purpose 🎯
+To streamline application deployment and improve update efficiency through automation and reliable processes.
+
+IAM Role Creation 🔑
+Set up IAM roles for EC2 and CodeDeploy, ensuring secure access management.
+Created an IAM user with developer permissions to manage AWS resources effectively.
+Instance Deployment 💻
+Launched two Amazon Linux EC2 instances and installed the CodeDeploy agent for automated deployments.
+Scripting 📜
+Developed bash scripts for environment setup and created three script files with appropriate permissions.
+Configured the AWS CLI for seamless communication with AWS services.
+AWS CodeDeploy Configuration 📦
+Established a sample application in AWS CodeDeploy and created a deployment group for efficient management and tracking.
+S3 Bucket Management ☁️
+Created an S3 bucket to store application code and pushed the code using CLI commands for easy access.
+Deployment Execution 🚦
+Initiated the deployment through CodeDeploy, monitored the status in real-time, and verified success by accessing the web server via its IP address.
+Advantages of the Project:
+Automation 🤖 for faster deployments.
+Scalability 📈 to meet growing demands.
+Version Control 📊 for effective management.
+Cost Efficiency 💰 by leveraging AWS services.
+This project sharpened my technical skills in AWS and DevOps, providing practical experience in building robust CI/CD pipelines applicable to real-world scenarios. 🌟💪
